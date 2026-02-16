@@ -41,10 +41,6 @@ def factorial(request,n1):
     return HttpResponse(f"<h1> Factorial of {n1} is {fact}</h1>")
     
 
-
-from django.http import HttpResponse
-from django.http import HttpResponse
-
 def list(request):
     return HttpResponse("""
     <h1>Available URL</h1>

@@ -4,7 +4,7 @@ from django.urls import path
 from arithmetic_operations.views import *
 
 urlpatterns = [
-    path('', list),
+   
     path('add/<int:n1>/<int:n2>/', addtwo),
     path('sub/<int:n1>/<int:n2>/', subtwo),
     path('mul/<int:n1>/<int:n2>/', multwo),
@@ -19,6 +19,7 @@ urlpatterns = [
     path('rectangle-area/<int:l>/<int:b>/', rectangle_area),
     path('circle-area/<int:r>/', circle_area),
     path('fact/<int:n1>/', factorial),
+    path('', list),
     
     
 ]
