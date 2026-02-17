@@ -19,6 +19,8 @@ urlpatterns = [
     path('rectangle-area/<int:l>/<int:b>/', rectangle_area),
     path('circle-area/<int:r>/', circle_area),
     path('fact/<int:n1>/', factorial),
+    path('palindrome/<str:s>/', palindrome),
+    
     path('', list),
     
     

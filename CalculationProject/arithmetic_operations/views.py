@@ -39,6 +39,14 @@ def factorial(request,n1):
     for i in range(1,n1+1):
         fact = fact*i
     return HttpResponse(f"<h1> Factorial of {n1} is {fact}</h1>")
+
+def palindrome(request,s):
+    rev = s[::-1]
+    if s == rev:
+        return HttpResponse(f"{s} is a Palindrome")
+    else:
+        return HttpResponse(f"{s} is not a Palindrome")
+        
     
 
 def list(request):
@@ -56,6 +64,8 @@ def list(request):
         <li>rectangle-area/</li>
         <li>circle-area/</li>
         <li>fact/</li>
+        <li>palindrome/</li>
+        
     </ul></h2>
     """)
 
